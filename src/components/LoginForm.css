@@ -6,16 +6,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Fondo general de la página */
 body {
     background-color: #222222;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-/* Contenedor Central */
+/* Contenedor Central del Login */
 .login-container {
     width: 100%;
     max-width: 400px;
@@ -23,7 +24,7 @@ body {
     text-align: center;
 }
 
-/* Icono de perfil superior (Agregado para React) */
+/* Icono de perfil superior (círculo gris) */
 .profile-icon {
     width: 100px;
     height: 100px;
@@ -41,7 +42,7 @@ body {
     fill: #aaa;
 }
 
-/* Estilos de los Inputs y Selects */
+/* Estilos de los Inputs y Selects (Cajas negras) */
 .input-group {
     position: relative;
     margin-bottom: 20px;
@@ -68,24 +69,28 @@ input, select {
     font-size: 16px;
     outline: none;
     height: 100%;
-    padding-right: 40px;
+    padding-right: 40px; /* Espacio para el icono */
+    
+    /* Fuerza al navegador a usar colores oscuros para el menú desplegable */
     color-scheme: dark; 
 }
 
+/* Ajuste específico para el select (quitar flecha por defecto) */
 select {
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
 }
 
-/* Opciones del select oscuras */
+/* --- Color de la lista desplegable --- */
+/* Esto asegura que las opciones dentro de la lista sean oscuras */
 select option {
     background-color: #1a1a1a;
     color: #ffffff;
     padding: 10px;
 }
 
-/* Iconos a la derecha */
+/* Iconos a la derecha (SVG) */
 .input-icon {
     position: absolute;
     right: 15px;
@@ -114,7 +119,7 @@ select option {
     border-color: #555;
 }
 
-/* Opciones inferiores */
+/* Opciones inferiores (Remember me, etc) */
 .options {
     display: flex;
     justify-content: space-between;
@@ -143,7 +148,7 @@ select option {
     text-underline-offset: 4px;
 }
 
-/* Pie de página */
+/* Pie de página (Crear cuenta) */
 .footer {
     margin-top: 40px;
     color: #666;
