@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginForm from './components/LoginForm'; // Asegúrate que la ruta sea correcta
+import LoginForm from './components/LoginForm';
 
 function App() {
   return (
